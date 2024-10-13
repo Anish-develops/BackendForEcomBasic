@@ -89,6 +89,7 @@ const getProducts = asyncHandler(async (req, res) => {
     if (!products || products.length === 0) {
         throw new ApiError(500, "products not found");
     }
+    
 
     return res
         .status(200)
